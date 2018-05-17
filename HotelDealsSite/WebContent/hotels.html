@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ABC.com</title>
+
+<link rel='stylesheet' type='text/css'
+	href='https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css' />
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="populator.js"></script>
+<script type="text/javascript" src="jsonFromServer.js"></script>
+<script type="text/javascript" src="jsUtil.js"></script>
+<!--   <script type="text/javascript" src="validator.js"></script> -->
+<link rel="stylesheet" type="text/css" href="styles/myStyles.css" />
+<!-- TODO: add google map -->
+<script type="text/javascript" src="jsUtil.js"></script>
+<script>
+ 	 $( function() {
+  	  $( "#minTripStartDate" ).datepicker();
+  	  $( "#maxTripStartDate" ).datepicker();
+	  } );
+ 	 </script>
+</head>
+<body onload="getDestinations();">
+	<a href="/hotels.html">
+	<img id ="logo" src="Logo2.png" alt="ABC.com"
+		style="font-size: 0;" border="0">
+	</a>
+	<div style="margin-left: 10px;">
+		<h1 style="color: #095de5">Find Hotels</h1>
+		<p style="font-weight: bold;">Find the hotel that best suits your
+			preference</p>
+
+  	<form id="findHotelForm" name="findHotelForm"  onload="getDestinations();" onsubmit="showResult();"
+			style="background-color:#c4d5ef; margin-right: 35%; font-size: 120%;" >
+			<table>
+				<tr>
+					<td><label style="font-weight: bold;">Destination</label></td>
+					<td><div id = "destinationField" ></div> </td>
+				</tr>
+				<tr>
+					<td colspan="4"><label style="font-weight: bold;">Trip
+							start date</label></td>
+				</tr>
+				<tr>
+					<td><label>from</label></td>
+					<td><input id="minTripStartDate" placeholder="mm/dd/yyyy"
+						type="text"></td>
+					<td><label>to</label></td>
+					<td><input id="maxTripStartDate" placeholder="mm/dd/yyyy"
+						type="text"></td>
+				</tr>
+				<tr>
+					<td><label style="font-weight: bold;">Length Of Stay</label></td>
+					<td><input name="lengthOfStay" type="number" size="2"></td>
+				<tr>
+				<tr>
+					<td colspan="4"><label style="font-weight: bold;">Rating</label></td>
+				</tr>
+				<tr>
+					<td>from</td>
+					<td><select name="minRating" id="minRating">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+					</select></td>
+					<td>to</td>
+					<td><select name="maxRating" id="maxRating">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td colspan="4"><label style="font-weight: bold;">Average Price Rate</label></td>
+				</tr>
+				<tr>
+					<td><label>from</label></td>
+					<td><input name="minPriceRate" type="number"></td>
+					<td><label>to</label></td>
+					<td><input name="maxPriceRate" type="number"></td>
+				</tr>
+				<tr>
+					<td>
+						<input class="blueButton" value="Find Deals" type="submit" >
+					</td>
+					<td>
+					    <label class="errorMessage" id="errorMessage"></label>
+					 </td> 	 
+				</tr>
+
+			</table>
+		</form>
+	</div>
+
+	<p id="result" class="result"></p>
+
+	<div class="footer" >
+		<a href="about.html">About us - </a> <a href="contactUs.html">Contact	us</a>
+	</div>
+</body>
+</html>

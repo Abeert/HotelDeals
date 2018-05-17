@@ -1,0 +1,63 @@
+{
+"matchingHotels" : [
+		{
+			"offerDateRange": {
+				"travelEndDate": [
+					"2018",
+					"6",
+					"25"
+				],
+				"lengthOfStay": "4",
+				"travelStartDate": [
+					"2018",
+					"6",
+					"21"
+				]
+			},
+			"hotelInfo": {
+				"hotelStarRating": "3.5",
+				"hotelLatitude": "25.95986",
+				"localizedHotelName": "Villa Lunablu",
+				"hotelGuestReviewRating": "5.0",
+				"hotelCountryCode": "USA",
+				"hotelId": "21973653",
+				"vipAccess": "false",
+				"hotelName": "Villa Lunablu",
+				"hotelDestination": "North Miami Beach",
+				"hotelDestinationRegionID": "55169",
+				"hotelImageUrl": "https://images.trvl-media.com/hotels/22000000/21980000/21973700/21973653/3e11d449_t.jpg",
+				"hotelCity": "North Miami Beach",
+				"hotelLongDestination": "North Miami Beach,FL,USA",
+				"hotelStreetAddress": "19921 NE 20th Ct",
+				"isOfficialRating": "false",
+				"hotelLongitude": "-80.16008",
+				"hotelReviewTotal": "1",
+				"hotelProvince": "FL"
+			},
+			"destination": {
+				"country": "United States of America",
+				"nonLocalizedCity": "Miami",
+				"associatedMultiCityRegionId": "178286",
+				"province": "Florida",
+				"city": "Miami",
+				"regionID": "178286",
+				"tla": "FLL",
+				"shortName": "Miami",
+				"longName": "Miami (and vicinity), Florida, United States of America"
+			},
+			"hotelPricingInfo": {
+				"crossOutPriceValue": "2000.1",
+				"drr": "false",
+				"totalPriceValue": "2000.4",
+				"currency": "USD",
+				"originalPricePerNight": "2000.1",
+				"averagePriceValue": "500.1",
+				"percentSavings": "75.0"
+			},
+			"hotelUrls": {
+				"hotelSearchResultUrl": "https%3A%2F%2Fwww.expedia.com%2Fgo%2Fhotel%2Fsearch%2FDestination%2F2018-06-21%2F2018-06-25%3FSearchType%3DDestination%26CityName%3DNorth+Miami+Beach%26RegionId%3D178286%26Selected%3D21973653",
+				"hotelInfositeUrl": "https%3A%2F%2Fwww.expedia.com%2Fgo%2Fhotel%2Finfo%2F21973653%2F2018-06-21%2F2018-06-25"
+			}
+		}
+	]
+}

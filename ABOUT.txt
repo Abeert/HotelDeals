@@ -1,0 +1,3 @@
+Althought I could not complete my assignment the way I designed, I did enjoy the challenge of making it work.
+Through my experience I have primitive knowledge web development. I decided to use Rest API despite of that, and managed to make my website running. So learning more JS, REST techniques, and CSS within this little time was a challenge for me. 
+I struggled with the presentation issues, and just before submitting my work I found that I have an issue with the concurrency of requests called from my page, so result does not display all the time, because of the destinations list loader. 
